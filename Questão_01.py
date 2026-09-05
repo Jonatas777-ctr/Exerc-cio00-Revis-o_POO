@@ -1,9 +1,13 @@
-funcionarios = ['Jonatas', 'Ana Luiza', 'Micaelly', 'Rhuan', 'João']
-print("Lista dos funcionários:", funcionarios)
+class bola:
+    def __init__(self, cor, circunferencia, material, esporte):
+        self.cor = cor
+        self.circunferencia = circunferencia
+        self.material = material
+        self.esporte = esporte
 
-X = int(input("Digite o número do funcionário a ser substituído: "))
-Y = input("Digite o nome do novo funcionário: ")
+bola1 = bola("verde", "30cm", "plástico", "futebol")
+bola2 = bola("azul", "50cm", "borracha", "vôlei")
 
-funcionarios [X] = Y
-
-print("Nova lista",funcionarios)
+print("---------------------------------------------------------------")
+print(f"A bola 1 é feita para {bola1.esporte}.")
+print("---------------------------------------------------------------")

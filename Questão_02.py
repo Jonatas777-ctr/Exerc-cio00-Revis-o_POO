@@ -1,8 +1,12 @@
-vet = []
-for i in range(10):
-   X = int(input(f"Digite o {i+1}º número inteiros: "))
-   vet.append(X)
+class livro:
+    def __init__(self, titulo, autor, ano):
+        self.titulo = titulo
+        self.autor = autor
+        self.ano = ano
 
-print("lista atual", vet)
-vet.reverse()
-print("Nova lista", vet)
+
+livro1 = livro("Dom Casmurro", "Machado de Assis", "1899")
+
+print("---------------------------------------------------------------")
+print(f"O titulo do livro é {livro1.titulo}.")
+print("---------------------------------------------------------------")
